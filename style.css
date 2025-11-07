@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Oswald", sans-serif;
+    font-size: 16px;
+    background-color: #242424;
+    color: rgb(101, 0, 0);
+}
+a {
+    color: rgb(255, 0, 0);
+}
+.presentation-contenu {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.logo {
+    display: flex;
+    align-items: center;
+}
+.titre {
+   font-weight: bold;
+}
+.header {
+    height: auto;
+    width: 100%;
+    padding: 10px 0;
+    background-color: rgb(26, 26, 26);
+    position: static;
+}
+.header-contenu {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: auto;
+    width: 100%;
+    padding:20px 0;
+    margin-top: 20px;
+    background-color:rgb(26, 26, 26);
+    color:white;
+    text-align: left;
+    position: static;
+    margin-top: 20px 0;
+}
+.footer-contenu {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    max-width: 1200px;    
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.sources {
+    text-align: right;
+}
+.bloc-1 {
+    display: flex;
+    height: auto;
+    width: 90%;
+    background-color: white;
+    margin: 20px auto;
+    padding: 20px;
+    position: static;
+}
+.bloc-1 img {
+    margin-right: 30px;
+}
+.bloc-2 {
+    display: flex;
+    height: auto;
+    width: 90%;
+    background-color: white;
+    margin: 20px auto;
+    padding: 20px;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: static;
+}
+.bloc-2 img {
+    margin-top: 50px;
+    margin-left: 30px;
+}
+.bloc-2 ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px 20px;
+    list-style-type: disc;
+    margin-left: 20px;
+    padding: 0;
+}
