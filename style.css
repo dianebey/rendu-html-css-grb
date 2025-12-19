@@ -1,8 +1,12 @@
+/*Base du site*/
+/*- Largeur*/
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+/*- Texte et fond du corps*/
 body {
     font-family: "Oswald", sans-serif;
     font-size: 16px;
@@ -12,6 +16,9 @@ body {
 a {
     color: rgb(255, 0, 0);
 }
+
+/*Mise en page globale par defaut du site*/
+/*- Dimensions*/
 .presentation-contenu {
     display: flex;
     flex-wrap: wrap;
@@ -27,6 +34,8 @@ a {
 .titre {
    font-weight: bold;
 }
+
+/*- Tête de page*/
 .header {
     height: auto;
     width: 100%;
@@ -35,11 +44,16 @@ a {
     position: static;
 }
 .header-contenu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     max-width: 1200px;
     width: 100%;
     margin: 0 auto;
     text-align: center;
 }
+
+/*- Pied de page*/
 .footer {
     display: flex;
     justify-content: center;
@@ -65,6 +79,8 @@ a {
 .sources {
     text-align: right;
 }
+
+/*- Blocs de contenu*/
 .bloc-1 {
     display: flex;
     height: auto;
@@ -99,4 +115,131 @@ a {
     list-style-type: disc;
     margin-left: 20px;
     padding: 0;
+}
+
+/*- Système de colonne et bouton*/
+/*- Colonne*/
+.row {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+}
+.col {
+    width: 100px;
+    background-color:rgb(26, 26, 26);
+    color: #f0f0f0;
+    padding: 16px;
+    
+}
+
+/*- Bouton*/
+#toggle {
+    margin-top: 10px;
+padding: 8px 16px;
+cursor: pointer;
+border: 1px solid;
+background: transparent;
+color: red;
+font-family: "Oswald", sans-serif;
+transition: all 0.3;
+}
+
+#toggle:hover {
+   transform: scale(1.05); 
+}
+
+/*- Menu*/
+.menu-burger {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.menu-icon {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    border: red;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.menu-icon span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: red;
+    transition: 0.3;
+}
+
+/*- Menu Navigation*/
+.nav-menu {
+    position: fixed;
+    top: 0;
+    right: -250px;
+    width: 250px;
+    height: 100vh;
+    background-color:#242424;
+    display: flex;
+    flex-direction: column;
+    padding: 50px 20px;
+    transition: 0.4;
+    z-index: 1000;
+}
+
+.nav-menu.active {
+    right: 0;
+}
+
+/*- Tabs*/
+.tab-buttons {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.tab-link {
+    padding: 10px;
+    cursor: pointer;
+    border: 1px solid red;
+    color: red;
+}
+
+.tab-link-active {
+    background-color: red;
+    color: white;
+}
+
+/*Mise en page mode clair du site*/
+/*- Mode clair*/
+.col.light {
+    background-color:white !important;
+    color:#242424 !important;
+}
+
+body.light {
+    background-color:white;
+}
+
+/*- Tête et pied de page mode clair*/
+body.light .header,
+body.light .footer {
+    background-color: #f0f0f0e2;
+    color: #242424;
+}
+
+body.light .col {
+    background-color:#f0f0f0e2
+}
+
+body.light .footer p,
+body.light .footer h2 {
+color: #242424;
+}
+
+body.light .nav-menu {
+    background-color:#f0f0f0;
+}
+/*- Transition mode clair*/
+body.col {
+    transition: background-color 0.4s ease, color 0.4s ease;
 }

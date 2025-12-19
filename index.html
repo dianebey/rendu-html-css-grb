@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Magie du chaos dans le MCU</title>
+    <title>Pouvoirs dans le MCU</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -12,24 +12,48 @@
     />
     <link rel="stylesheet" href="style.css"/>
   </head>
-  <body>
+  <body class="light">
     <header class="header">
       <div class="header-contenu">
         <img
           class="logo"
-          src="https://tse4.mm.bing.net/th/id/OIP.FL2v9h1F10K9ZeqU3sJkmQHaDW?w=1200&h=543&rs=1&pid=ImgDetMain&o=7&rm=3"
+          src="logo-marvel_img.webp"
           width="171"
           height="77"
           alt="logo Marvel"
         />
       </div>
+      <div class="menu-burger">
+        <button id="menu" class="menu-icon">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <nav id="sideMenu" class="nav-menu">
+<a href="#">Accueil</a>
+<a href="#">Wanda</a>
+<a href="#">Magie</a>
+<a href="#">Sources</a>
+        </nav>
+      </div>
+      <div class="row">
+        <div class="col" id="colonne">
+<button type="button" id="toggle">Mode</button>
+        </div>
+      </div>
     </header>
     <section>
+      <div class="tabs">
+<div class="tab-buttons">
+  <button class="tab-link-active" onclick="openTab(event, `Personnages`)">Personnages</button>
+  <button class="tab-link" onclick="openTab(event, `Pouvoirs`)">Pouvoirs</button>
+</div>
+      </div>
       <article class="presentation-contenu">
         <div>
           <div class="bloc-1">
             <img
-              src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/5b8d2b12-21e8-4931-8a6d-fb9ecdd60383/defggkr-0e063a56-b9fa-4802-8d62-38224bde1ba4.png/v1/fill/w_720,h_1109/wandavision_the_scarlet_witch_png_by_metropolis_hero1125_defggkr-pre.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTEyNyIsInBhdGgiOiJcL2ZcLzViOGQyYjEyLTIxZTgtNDkzMS04YTZkLWZiOWVjZGQ2MDM4M1wvZGVmZ2drci0wZTA2M2E1Ni1iOWZhLTQ4MDItOGQ2Mi0zODIyNGJkZTFiYTQucG5nIiwid2lkdGgiOiI8PTczMiJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.Uqb_XL6e-iRBgZ5cbDDXbQ5l1w32IjUebTqexiQ_fLc"
+              src="the-scarlet-witch_png_img.png"
               width="240"
               height="369"
               alt="La sorcière rouge"
@@ -77,7 +101,7 @@
             </div>
             <div>
               <img
-                src="https://i.pinimg.com/originals/ec/02/f9/ec02f9f91b1b1d80c24b96c831906715.jpg"
+                src="chaos-power_img.jpg"
                 width="289"
                 height="289"
                 alt="Main de Wanda et magie du chaos"
@@ -92,7 +116,7 @@
         <div>
           <img
             class="logo"
-            src="https://i.pinimg.com/736x/f3/70/5b/f3705b02ca1c1bc7ebbcb97fca566560.jpg"
+            src="ma-pp_img.jpg"
             width="50"
             height="50"
             alt="pp Denia"
@@ -115,5 +139,6 @@
         </div>
       </div>
     </footer>
+    <script src="main.js"></script>
   </body>
 </html>
